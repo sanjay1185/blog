@@ -1,0 +1,2975 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:26:57) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 141ms (View: 141, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#blog (for 127.0.0.1 at 2010-05-20 12:27:01) [GET]
+  Parameters: {"url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology", "id"=>"url_data"}
+
+ActionController::UnknownAction (No action responded to blog. Actions: form_html, generate_html, index, url_data, and url_video):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#blog (for 127.0.0.1 at 2010-05-20 12:27:30) [GET]
+  Parameters: {"url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology", "id"=>"url_data"}
+
+ActionController::UnknownAction (No action responded to blog. Actions: form_html, generate_html, index, url_data, and url_video):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:27:46) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#blog (for 127.0.0.1 at 2010-05-20 12:27:55) [GET]
+  Parameters: {"url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology", "id"=>"url_data"}
+
+ActionController::UnknownAction (No action responded to blog. Actions: form_html, generate_html, index, url_data, and url_video):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:29:11) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:29:14) [GET]
+  Parameters: {"url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1328ms (View: 156, DB: 0) | 200 OK [http://localhost/blog/url_data?url=http%3A%2F%2Fwww.nytimes.com%2F2010%2F05%2F13%2Ftechnology%2F13sap.html%3Fref%3Dtechnology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#blog (for 127.0.0.1 at 2010-05-20 12:29:27) [GET]
+  Parameters: {"id"=>"generate_html"}
+
+ActionController::UnknownAction (No action responded to blog. Actions: form_html, generate_html, index, url_data, and url_video):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:30:00) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:30:04) [GET]
+  Parameters: {"url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 2547ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data?url=http%3A%2F%2Fwww.nytimes.com%2F2010%2F05%2F13%2Ftechnology%2F13sap.html%3Fref%3Dtechnology]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:30:18) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:41:28) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #35 of app/views/blog/index.html.erb:
+32:       <input type="text" name="url" id="url" size="45">&nbsp;&nbsp;<input type="button" id="ckk" value="Attach" onclick="remoteData()" />
+33:     </form>
+34:     <% form_remote_tag :update => 'practice_data',:url=>{:action=>"url_data"} do -%>
+35:     <div><%=text_field:url%><%= submit_tag 'Save' %></div>
+36:   <% end -%>
+37: 
+38:   </div>
+
+    app/views/blog/index.html.erb:35:in `text_field'
+    app/views/blog/index.html.erb:35
+    app/views/blog/index.html.erb:34
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:43:18) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 766ms (View: 766, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:43:54) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 218ms (View: 218, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:44:09) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:45:36) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:46:08) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:46:51) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 266ms (View: 266, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:47:16) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://"}
+
+URI::InvalidURIError (bad URI(absolute but no path): http://):
+  c:/ruby/lib/ruby/1.8/uri/common.rb:406:in `split'
+  c:/ruby/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/blog_controller.rb:11:in `url_data'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:48:14) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:48:17) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://"}
+
+URI::InvalidURIError (bad URI(absolute but no path): http://):
+  c:/ruby/lib/ruby/1.8/uri/common.rb:406:in `split'
+  c:/ruby/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/blog_controller.rb:11:in `url_data'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:48:26) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:48:36) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 3109ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:50:43) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:50:47) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 2813ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:52:22) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:52:24) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendering blog/url_data
+Rendered blog/_comments (0.0ms)
+Completed in 1391ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:56:40) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:56:43) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 2485ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:56:51) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:56:53) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1578ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 12:57:33) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 12:57:36) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 2766ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 13:01:46) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 13:01:49) [GET]
+  Parameters: {"url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 2062ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data?url=http%3A%2F%2Fwww.nytimes.com%2F2010%2F05%2F13%2Ftechnology%2F13sap.html%3Fref%3Dtechnology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 13:06:50) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 13:06:52) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1312ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 13:09:01) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 13:09:19) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 13:09:41) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 13:09:44) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1531ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 13:11:55) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 13:11:58) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1437ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 13:12:46) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/blog_controller.rb:40:in `url_video'
+
+Rendered rescues/_trace (312.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 13:13:25) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/blog_controller.rb:40:in `url_video'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 13:13:59) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 13:14:02) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1234ms (View: 78, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 13:14:09) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (16.0ms)
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 13:14:51) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 13:14:55) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 13:15:00) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1141ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:21:20) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:21:24) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 4344ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 14:22:21) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:22:41) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:22:47) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1125ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:26:37) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:26:40) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 2235ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:27:27) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:27:29) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 3844ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:27:55) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:30:26) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:30:29) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 3547ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:30:37) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:33:53) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:33:58) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 2531ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:34:03) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:35:35) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:36:41) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:36:44) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 1390ms (View: 203, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:36:49) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:37:21) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:37:23) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1328ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:37:27) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:38:31) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:38:34) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1297ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:38:37) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:40:08) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:40:10) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1547ms (View: 188, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:40:14) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 14:40:16) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:40:23) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:40:26) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1203ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:41:32) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:41:34) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 3234ms (View: 46, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:42:11) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:42:13) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 984ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:42:27) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:42:29) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 1282ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:43:15) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:43:33) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:43:36) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (46.0ms)
+Completed in 1109ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:43:43) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:44:41) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:44:44) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 2594ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:44:49) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:44:59) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:45:01) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 2531ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:47:48) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:47:51) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1437ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:47:55) [POST]
+  Parameters: {"someVal"=>"3", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:54:09) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:54:11) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1453ms (View: 188, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:54:15) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 14:54:43) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:55:43) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:55:43) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:56:24) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 157ms (View: 157, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:56:27) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 1203ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:57:00) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:57:02) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1094ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 14:58:26) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 266ms (View: 266, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 14:58:31) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1172ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 14:59:02) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 14:59:27) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:00:07) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:00:22) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:00:24) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 2484ms (View: 93, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:01:14) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:01:17) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 2906ms (View: 172, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:04:10) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:04:12) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (46.0ms)
+Completed in 1312ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:04:50) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:04:52) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1656ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:07:42) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:07:45) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1860ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:09:28) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:09:31) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1625ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:09:52) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:09:55) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1625ms (View: 187, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:12:35) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:12:38) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 2125ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:12:51) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:12:55) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 2250ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:13:01) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:13:56) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:13:59) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 1281ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:15:15) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:15:18) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1124ms (View: 46, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:16:15) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:16:17) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 2906ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:17:15) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:17:18) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1532ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:17:57) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:18:13) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 234ms (View: 234, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:18:25) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:18:27) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://"}
+
+URI::InvalidURIError (bad URI(absolute but no path): http://):
+  c:/ruby/lib/ruby/1.8/uri/common.rb:406:in `split'
+  c:/ruby/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/blog_controller.rb:12:in `url_data'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:18:53) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 406ms (View: 375, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:18:58) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://"}
+
+URI::InvalidURIError (bad URI(absolute but no path): http://):
+  c:/ruby/lib/ruby/1.8/uri/common.rb:406:in `split'
+  c:/ruby/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/blog_controller.rb:12:in `url_data'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:19:50) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:19:53) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1422ms (View: 63, DB: 16) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:20:11) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:24:34) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:24:37) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1156ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:24:41) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:25:59) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:26:01) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1328ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:26:05) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:26:22) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:26:25) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 2375ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:26:29) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:27:20) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:27:24) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 2484ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:27:30) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:28:11) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:28:13) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1422ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:28:16) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:28:22) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:28:25) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1875ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:28:28) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:29:23) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:29:26) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 2985ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:29:32) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:30:04) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:30:06) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1782ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:30:10) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:30:46) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:31:08) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:31:11) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://"}
+
+URI::InvalidURIError (bad URI(absolute but no path): http://):
+  c:/ruby/lib/ruby/1.8/uri/common.rb:406:in `split'
+  c:/ruby/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/blog_controller.rb:12:in `url_data'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:31:25) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (47.0ms)
+Completed in 2218ms (View: 125, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:31:33) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"rows2col60"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:31:40) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:31:56) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:31:59) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 2734ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 15:32:19) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:32:44) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 265ms (View: 250, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:32:47) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1281ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 15:32:51) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:35:01) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:35:04) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 2797ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 15:35:30) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:38:20) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:38:23) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1328ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:38:29) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:38:48) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:38:50) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1703ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:38:55) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:39:08) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:39:10) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1250ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:39:18) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:39:42) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:43:24) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 234ms (View: 234, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:43:26) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1578ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:44:31) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (15.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:44:34) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1110ms (View: 47, DB: 15) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:44:43) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"sdsa"}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:44:51) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:44:54) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1031ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 15:45:16) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:45:28) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:45:30) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1797ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:45:40) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:45:43) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1031ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:49:03) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:49:06) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1313ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:49:10) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:49:31) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:49:33) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 2922ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:50:01) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:50:05) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:50:08) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 3141ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:50:20) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:50:32) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:50:35) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 2359ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:52:21) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:52:24) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1203ms (View: 32, DB: 16) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:53:54) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:53:57) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 2203ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 15:54:05) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#blog (for 127.0.0.1 at 2010-05-20 15:54:12) [GET]
+  Parameters: {"id"=>"form_html"}
+
+ActionController::UnknownAction (No action responded to blog. Actions: form_html, generate_html, index, url_data, and url_video):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:55:53) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:55:55) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 2875ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 15:56:09) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_data (for 127.0.0.1 at 2010-05-20 15:56:38) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+
+ActionController::UnknownAction (No action responded to form_data. Actions: form_html, generate_html, index, url_data, and url_video):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:57:22) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:57:25) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 2640ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 15:57:41) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:58:26) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:58:28) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1468ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 15:58:35) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"page.remove 'checkbox_toggle'"}
+Rendered blog/_video (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 15:58:55) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 15:58:57) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1343ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 15:59:12) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:00:13) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:00:16) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1281ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:00:19) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:00:24) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:00:26) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1593ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 16:00:37) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:00:40) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:01:20) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:01:23) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1407ms (View: 188, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:01:27) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:01:28) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:02:47) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:02:52) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 2266ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:02:56) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:02:58) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:03:02) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:03:04) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1235ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:03:14) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:03:21) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:03:25) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1469ms (View: 172, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 16:03:31) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:03:34) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:04:13) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:04:15) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1281ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:04:23) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:04:28) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:04:30) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 2250ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:05:00) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:09:54) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:09:57) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1250ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:10:00) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:10:09) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:10:12) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 2671ms (View: 125, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:10:40) [POST]
+  Parameters: {"commit"=>"Done it", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"dsadsad"}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:10:45) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:10:48) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1281ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:11:23) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:12:54) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:12:56) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1343ms (View: 46, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:14:15) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:14:29) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:14:32) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1500ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 16:14:56) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:15:14) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:15:16) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1781ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:15:19) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 16:15:24) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:15:39) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 203ms (View: 187, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:15:44) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 2875ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:15:57) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:16:55) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:16:58) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1266ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:17:01) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:18:28) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 16) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:18:31) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1250ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:18:36) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:18:48) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:18:50) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 3234ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:18:55) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 15, DB: 16) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:19:01) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:19:03) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1203ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 16:19:13) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:19:16) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:20:09) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:22:10) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1937ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:22:14) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:22:15) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:22:55) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:22:59) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1219ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:23:01) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:23:02) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:24:42) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:24:45) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 2672ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (15.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:24:48) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 15) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:24:49) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:27:13) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:27:15) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 2797ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:27:19) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:27:50) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:30:33) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:30:36) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1547ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:30:38) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:30:39) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:32:19) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:32:22) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1172ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:32:26) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:32:27) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:33:24) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:33:31) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:33:33) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1329ms (View: 188, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:33:35) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:33:39) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:41:49) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:41:53) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 2766ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:42:28) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:42:30) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (0.0ms)
+Completed in 1235ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:42:35) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:42:36) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:44:01) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:44:05) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (32.0ms)
+Completed in 1562ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:44:09) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:45:14) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:45:17) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1250ms (View: 63, DB: 16) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:45:20) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:48:09) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:48:12) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1375ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:48:17) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:48:53) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 172ms (View: 172, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:48:57) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 4407ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:49:04) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:49:06) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:51:27) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:51:47) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (47.0ms)
+Completed in 1954ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:51:52) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:51:54) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:52:20) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:52:23) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1875ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:52:28) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>"sdsadsads"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:52:31) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:52:34) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1188ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 16:52:49) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:54:54) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:54:57) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (156.0ms)
+Completed in 1359ms (View: 171, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 16:55:09) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (15.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 16:55:13) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 16:55:16) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 16:55:19) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1766ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 16:55:25) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:02:53) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:02:56) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (15.0ms)
+Completed in 1359ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:14:30) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:14:33) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (78.0ms)
+Completed in 1344ms (View: 94, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:14:36) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:14:37) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:16:33) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 203ms (View: 188, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:16:36) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1313ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:16:39) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:16:39) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:16:42) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:16:45) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1422ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:20:01) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:20:10) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (16.0ms)
+Completed in 1188ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:20:13) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:20:13) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:23:06) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:23:08) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (47.0ms)
+Completed in 1532ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:23:11) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:23:12) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:27:47) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:27:49) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (47.0ms)
+Completed in 1547ms (View: 234, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:27:53) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:27:54) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:31:36) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:31:38) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1860ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:31:41) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:31:42) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:34:25) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:34:28) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 2406ms (View: 62, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:34:32) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:34:44) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:34:46) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (47.0ms)
+Completed in 1578ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:34:50) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:34:51) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:36:03) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:36:05) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1360ms (View: 63, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:36:07) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:36:29) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:36:31) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 2156ms (View: 46, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#generate_html (for 127.0.0.1 at 2010-05-20 17:36:34) [POST]
+  Parameters: {"commit"=>"Done", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "comment"=>""}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/generate_html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:36:36) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:36:40) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-05-20 17:36:43) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "url"=>"http://www.nytimes.com/2010/05/13/technology/13sap.html?ref=technology"}
+Rendered blog/_comments (31.0ms)
+Completed in 1391ms (View: 31, DB: 0) | 200 OK [http://localhost/blog/url_data]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_video (for 127.0.0.1 at 2010-05-20 17:36:57) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0=", "video_url"=>"http://www.youtube.com/watch?v=F6zE__J0YIU&feature=fvhr"}
+Rendered blog/_video (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/url_video]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#form_html (for 127.0.0.1 at 2010-05-20 17:37:02) [POST]
+  Parameters: {"authenticity_token"=>"eSbRGxC4V62pib/R/utucqCmlEqxzEljSWVddbzV4U0="}
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/blog/form_html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 17:37:10) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-05-20 18:16:05) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/blog/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-06-02 09:55:54) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 860ms (View: 844, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-06-02 09:56:17) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #6 of app/views/blog/index.html.erb:
+3: <script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAzRYiONcChPnzX8VFigvsrhQPRfaTzN2tg2xf-e5lSrGWTp35ZxTWmoO-hFLxrnmLWBeBiYffsEn7Yg" type="text/javascript">
+4: </script>
+5: 
+6: <%= link_to "Upload New", new_user_image_path(@user.id)  %>
+7: 
+8: <%for image in @user.images%>
+9: <img src="<%= url_for(:action => 'show', :id => image.id) %>"/>
+
+    app/views/blog/index.html.erb:6
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-06-02 09:56:30) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-06-02 10:17:57) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (297.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#index (for 127.0.0.1 at 2010-06-09 11:26:43) [GET]
+Rendering template within layouts/application
+Rendering blog/index
+Completed in 4176ms (View: 4176, DB: 297) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogController#url_data (for 127.0.0.1 at 2010-06-09 11:27:57) [POST]
+  Parameters: {"commit"=>"Attach", "authenticity_token"=>"T9/L2/P15PDGRsrPK9rX6ozcPb8I95CUutMfLLMvh0w=", "url"=>"http://www.communityengine.org/index.html"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/blog_controller.rb:29:in `url_data'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)

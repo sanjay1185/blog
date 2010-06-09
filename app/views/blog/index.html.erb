@@ -1,0 +1,40 @@
+<script language=javascript runat=server>
+</script>
+
+<div style="margin-left:350px;width:550px">
+  <div id="step1">
+    <h4>Enter URL</h4>
+    <h2>Step 1</h2>
+    <p style="width:300px">
+      <b>Enter url of an article you want to quote.click submit,then enter your comment</b>
+    </p>
+  </div>
+
+  <div id="step2" style="display:none">
+    <h4>Preview</h4>
+    <h2>Step 2</h2>
+    <p style="width:300px">
+      <b>Does everything looks alright?</b>
+    </p>
+  </div>
+
+  <div id="step3" style="display:none">
+    <h4>Get Code</h4>
+    <h2>Step 3</h2>
+    <p style="width:300px">
+      <b>Copy you code to insert into your blog post, or email marketing. </b>
+    </p>
+  </div>
+
+  <div id="copy" style="text-align:right;display:none"><input type="button" value="Copy"  name="copy" onclick="ClipBoard()"></div>
+  <div id="myDiv" style="width:550px">
+
+    <% form_remote_tag( :url=>{:action=>"url_data"}) do -%>
+      <div>
+        <%=text_field_tag :url,'http://',:size=>45 %>&nbsp;&nbsp;<%= submit_tag 'Attach' %>
+      </div>
+    <% end -%>
+
+  </div>
+
+</div>

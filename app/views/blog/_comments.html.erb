@@ -1,0 +1,59 @@
+<div style="background:#CCCECE"   >
+  <div id="holdtext" style="padding:1em;display:none;">
+    <textarea id="htmltext" rows="50" cols="62">
+    </textarea>
+  </div>
+  <div id="full_html" style="padding:1em;">
+    <div id="article" style="width:525px">
+      <% form_remote_tag(:url=>{:action=>"generate_html"}) do -%>
+        <div id="comments">
+          <%=text_area_tag "comment",'',:rows=>2,:cols=>60 %>
+          <div id="done_button" style="position:absolute;margin-top:150px;margin-left:450px">
+            <%=submit_tag "Done"%>
+          </div>
+        </div>
+      <%end%>
+      <form id="image_screen" name="SlideShow">
+        <table>
+          <tr>
+            <td valign='top'>
+              <div id="picture_display">
+                <img name="Screen" width=140 height=100>
+              </div>
+            </td>
+            <td  valign='top'>
+              <b><%= @headline%></b>
+              <p><%=@text%><p/>
+              <p id="url" style="font-size:12px;font-weight:bold"></p>
+              <% unless @images.size ==0%>
+                <div id="togglebutton">
+                  <input type="button" name="Previous" value=" << " onClick="ShowSlide(-1)">
+                  <input type="button" disabled="disabled" name="Next" value=" >> " onClick="ShowSlide(1)">
+                  <%=@images.size > 1 ? "<small>Choose a Thumbnail</small>": ""%>
+                </div>
+                <br/>
+                <div id="checkbox_toggle">                 
+                  <input type="checkbox" onclick="noPicture(this);" name="toggleScreen" id="toggleScreen" value='true'><label style="color:#999999">No Thumbnail</label></div>
+              <%end%>
+            </td>
+          </tr>
+        </table>
+        <div id="video">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="video_data" style="padding:1em;">
+  Add Another
+  <% form_remote_tag(:url=>{:action=>"url_video"}) do -%>
+    
+      <%=text_field_tag :video_url,'http://',:size=>45 %>&nbsp;&nbsp;<%= submit_tag 'Attach' %>
+    
+  <% end -%>
+</div>
+<div id="continue" style="text-align:right;padding:1em;display:none">
+  <%=button_to_remote('Continue',:url=>{:action=>'form_html'},
+                                        :complete=>"$('holdtext').style.display='block';$('htmltext').textContent=String(document.getElementById('full_html').innerHTML);$('full_html').style.display='none'"
+                                        )%>
+</div>
